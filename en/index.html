@@ -46,11 +46,12 @@
 <body>
   <h1>fopic Privacy Notice</h1>
   <p>The Tens ("we", "us") provides the fopic photo booth app. This notice explains what personal data we process, why, who we share it with, and what rights you have.</p>
-  <p class="meta">Effective 21 August 2026 · Last updated 21 August 2026</p>
+  <p class="meta">Effective 21 August 2026 · Last updated 18 August 2026</p>
   <p class="nav"><a href="./terms.html">View Terms of Service →</a> · <a href="../">한국어</a></p>
   <div class="notice">
     <strong>This notice takes effect on 21 August 2026</strong>
     <p>This is the first English version of our privacy notice. It takes effect on 21 August 2026, together with the Korean version. Until then, the Korean privacy policy dated 6 August 2026 applies — it is available <a href="../index-2026-08-06.html">here</a>.</p>
+    <p><strong>This version also introduces ad performance measurement (install attribution).</strong> To measure which ad led to an install we added <strong>AppsFlyer</strong> as a processor, and the measurement result is also passed to the platforms where we run ads (<strong>Meta and TikTok</strong>) — added as third-party recipients. Those platforms do not act on our instructions; they also use the data to optimise their own ad delivery. <strong>The app does not contain their collection software (SDK)</strong>, and if you do not allow app tracking on iOS the advertising identifier is not passed — only Apple's anonymised, aggregated figures are. Section 6 explains how to reset the identifier and opt out.</p>
     <p><strong>The Terms of Service take effect on a different date.</strong> That revision may be unfavourable to some users and so requires 30 days' notice; it takes effect on <a href="./terms.html">8 September 2026</a> as announced.</p>
     <p>Questions: <a href="mailto:contact@thetens.app">contact@thetens.app</a></p>
   </div>
@@ -81,10 +82,14 @@
       <tr><td>Advertising identifier (iOS IDFA, Android AAID), device information, IP address</td><td>Serving and measuring ads</td><td>Google AdMob</td></tr>
       <tr><td>Approximate location (country and city level)</td><td>Serving and measuring ads</td><td>Google AdMob</td></tr>
       <tr><td>Account identifier (if signed in) or an anonymous identifier, device information</td><td>Verifying subscription entitlement</td><td>RevenueCat</td></tr>
+      <tr><td>Advertising identifier (iOS IDFA), device information, IP address, app install and first-open records, a measurement device identifier</td><td>Measuring ad performance (working out which ad led to the install)</td><td>AppsFlyer</td></tr>
+      <tr><td>An attribution token issued by Apple (only if you installed via an App Store search ad), advertising identifier, measurement device identifier</td><td>Measuring search ad performance</td><td>RevenueCat</td></tr>
     </tbody>
   </table>
   </div>
   <p>This does not include your name or email address. You can reset or delete the advertising identifier in your device settings at any time — see section 6.</p>
+  <p><strong>About ad performance measurement</strong> — To decide where to spend our advertising budget, we measure which ad led to an app install. AppsFlyer carries out this measurement on our behalf, and the result is also passed to the platform that showed the ad (Meta, TikTok). Sections 6, 7 and 8 give the details.</p>
+  <p><strong>The app does not contain Meta's or TikTok's collection software (SDK).</strong> Those companies therefore do not collect anything from your device directly; they receive the measurement result from AppsFlyer on our instructions.</p>
   <p><strong>About approximate location</strong> — The approximate location above (country and city level) is estimated by the advertising provider from your IP address and device signals. <strong>The app does not request location permission and does not collect GPS or other precise location data.</strong> We do not collect or store this ourselves.</p>
   <h3>3.2 Photos and videos, and QR sharing</h3>
   <p><strong>If you choose to share by QR code, the finished photo strip (which may contain faces) and the video are uploaded to a sharing server.</strong> This feature works without an account.</p>
@@ -165,11 +170,19 @@
     <thead><tr><th>Who collects</th><th>Purpose</th><th>Data</th><th>Retention</th><th>Country</th></tr></thead>
     <tbody>
       <tr><td>Google LLC (Google AdMob) and advertising providers connected through mediation</td><td>Serving ads, measuring performance, personalised ads</td><td>Advertising identifier, device information, IP address, approximate location (country and city level), ad view and click records</td><td>Per each provider's own privacy policy</td><td>United States and others</td></tr>
+      <tr><td>Meta Platforms, TikTok (only while we are running ads on that platform)</td><td>Measuring the performance of ads we ran, and optimising them</td><td>Advertising identifier, measurement device identifier, app install and subscription-start records, campaign identifiers</td><td>Per each provider's own privacy policy</td><td>Ireland, United States, Singapore and others</td></tr>
     </tbody>
   </table>
   </div>
   <p><strong>We do not collect or store this behavioural data ourselves.</strong> The advertising providers collect it from your device. If you reset or delete the advertising identifier in your device settings, data collected after that point is not linked to earlier data.</p>
-  <p>Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+  <p><strong>Meta and TikTok reach this data by a different route.</strong> As noted above, <strong>the app does not contain their collection software (SDK), so they do not collect anything from your device directly.</strong> To check how our ads performed, we pass the measurement result to them through AppsFlyer, our service provider, and they process the data only within that scope. Nothing is passed while we are not running ads on that platform.</p>
+  <p>Privacy policies of each provider:</p>
+  <ul>
+    <li>Google <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+    <li>AppsFlyer <a href="https://www.appsflyer.com/legal/services-privacy-policy/">https://www.appsflyer.com/legal/services-privacy-policy/</a></li>
+    <li>Meta <a href="https://www.facebook.com/privacy/policy">https://www.facebook.com/privacy/policy</a></li>
+    <li>TikTok <a href="https://www.tiktok.com/legal/page/row/privacy-policy">https://www.tiktok.com/legal/page/row/privacy-policy</a></li>
+  </ul>
   <p><strong>How to opt out</strong></p>
   <ul>
     <li><strong>On iOS, fopic asks for tracking permission the first time you open it.</strong> If you decline, you get non-personalised ads instead, and <strong>every feature of the app still works.</strong> You can change this later in Settings → Privacy &amp; Security → Tracking.</li>
@@ -187,14 +200,26 @@
     <tbody>
       <tr><td>Supabase Pte. Ltd (Singapore company) and its group company Supabase Inc (US company)</td><td>Account authentication and storing account data</td><td>Until deletion when you close your account</td><td>Republic of Korea (Seoul)</td></tr>
       <tr><td>Cloudflare, Inc.</td><td>Temporary storage of QR sharing files</td><td>24 hours after upload</td><td>United States</td></tr>
-      <tr><td>RevenueCat, Inc.</td><td>Checking and restoring subscription entitlement</td><td>See section 9</td><td>United States</td></tr>
+      <tr><td>RevenueCat, Inc.</td><td>Checking and restoring subscription entitlement, measuring search ad performance</td><td>See section 9</td><td>United States</td></tr>
       <tr><td>Datadog, Inc.</td><td>Error diagnosis, stability monitoring, usage analysis</td><td>30 days from collection</td><td>United States</td></tr>
+      <tr><td>AppsFlyer Ltd. and its group companies</td><td>Measuring ad performance (install attribution) and passing the result to the ad platforms</td><td>Up to 24 months</td><td>Stored in the European Union. Group companies may access it from their own countries for support and maintenance (see section 7)</td></tr>
     </tbody>
   </table>
   </div>
   <p>These providers handle your data only within the scope we instruct and do not use it for their own purposes. Our contracts with them cover confidentiality, security measures, limits on sub-contracting, and their obligation to help us answer your requests, as required by Article 26 of the Korean Personal Information Protection Act.</p>
   <p><strong>About Supabase</strong> — Account data and the frames and stickers you create are stored on servers in Seoul, Republic of Korea. However, we contract with Supabase Pte. Ltd, a Singapore company, and its group company Supabase Inc is a US company, so access from outside Korea and transfers within the group may occur in the course of operations and technical support. Section 8 covers this.</p>
-  <p><strong>Google is not one of these providers.</strong> Google LLC (Google AdMob) collects and uses the advertising identifier, device information, IP address, and approximate location for its own advertising purposes as well, and may pass this to other advertising providers through mediation. Google therefore decides how it uses that data <strong>independently of us</strong>, rather than acting on our instructions. Section 6 sets out what it collects and how to opt out.</p>
+  <p><strong>Google, Meta and TikTok are not among these providers.</strong> Google LLC (Google AdMob) collects and uses the advertising identifier, device information, IP address, and approximate location for its own advertising purposes as well, and may pass this to other advertising providers through mediation. Google therefore decides how it uses that data <strong>independently of us</strong>, rather than acting on our instructions. Section 6 sets out what it collects and how to opt out.</p>
+  <p><strong>Ad platforms we advertise on</strong> — Where we run ads on Meta or TikTok, the measurement result (whether an install happened, which campaign or ad it came from, whether a subscription started) is passed to that platform. We do this to see how our ads performed and to decide where to spend, and the platform also uses it to optimise its own ad delivery. Like Google, they therefore act independently of us rather than on our instructions.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Recipient</th><th>Data</th><th>Purpose</th><th>Retention</th></tr></thead>
+    <tbody>
+      <tr><td>Meta Platforms Ireland Ltd. and its group company Meta Platforms, Inc.</td><td>Advertising identifier, measurement device identifier, app install and subscription-start records, campaign identifiers</td><td>Measuring and optimising the ads we ran</td><td>Per Meta's privacy policy</td></tr>
+      <tr><td>TikTok Pte. Ltd. and its group companies</td><td>Advertising identifier, measurement device identifier, app install and subscription-start records, campaign identifiers</td><td>Measuring and optimising the ads we ran</td><td>Per TikTok's privacy policy</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>This only happens while we are running ads on that platform.</strong> If you decline app tracking on iOS, the advertising identifier is not passed at all — only the anonymised, aggregated information Apple provides (SKAdNetwork) reaches the platform, and that cannot identify you.</p>
   <h2>8. Where your data goes</h2>
   <p>We are established in the Republic of Korea, and some of our service providers are in the United States and Singapore.</p>
   <div class="scroll">
@@ -204,7 +229,10 @@
       <tr><td>Cloudflare, Inc.</td><td>United States</td><td>Finished photo (may contain faces), video, frame and sticker files, IP address</td><td>Temporary storage of QR sharing files</td><td>Deleted 24 hours after upload</td></tr>
       <tr><td>Google LLC</td><td>United States</td><td>Advertising identifier, device information, IP address, approximate location</td><td>Serving and measuring ads</td><td>Per Google's privacy policy</td></tr>
       <tr><td>Datadog, Inc.</td><td>United States</td><td>Device information, app version, IP address, app usage records, error records</td><td>Error diagnosis and monitoring</td><td>30 days from collection</td></tr>
-      <tr><td>RevenueCat, Inc.</td><td>United States</td><td>Account or anonymous identifier, device information, purchase history</td><td>Verifying subscription entitlement</td><td>See section 9</td></tr>
+      <tr><td>RevenueCat, Inc.</td><td>United States</td><td>Account or anonymous identifier, device information, purchase history, advertising identifier, measurement device identifier, Apple attribution token</td><td>Verifying subscription entitlement, measuring search ad performance</td><td>See section 9</td></tr>
+      <tr><td>AppsFlyer Ltd. and its group companies</td><td><strong>Stored in:</strong> the European Union / <strong>Accessed from:</strong> Israel, the United States, Japan, the United Kingdom, Germany, China, Hong Kong and India (group companies providing support and maintenance)</td><td>Advertising identifier, measurement device identifier, device information, IP address, app install and first-open records, subscription-start records</td><td>Measuring ad performance (install attribution)</td><td>Up to 24 months</td></tr>
+      <tr><td>Meta Platforms Ireland Ltd. and its group company Meta Platforms, Inc.</td><td>Ireland, United States</td><td>Advertising identifier, measurement device identifier, app install and subscription-start records, campaign identifiers</td><td>Measuring and optimising the ads we ran</td><td>Per Meta's privacy policy</td></tr>
+      <tr><td>TikTok Pte. Ltd. and its group companies</td><td>Singapore and others</td><td>Advertising identifier, measurement device identifier, app install and subscription-start records, campaign identifiers</td><td>Measuring and optimising the ads we ran</td><td>Per TikTok's privacy policy</td></tr>
       <tr><td>Supabase Pte. Ltd and its group company Supabase Inc</td><td>Singapore, United States</td><td>Account data (email address, name), frames and stickers you create</td><td>Account authentication, storing account data, technical support</td><td>Until deletion when you close your account</td></tr>
     </tbody>
   </table>
@@ -293,6 +321,7 @@
     <li>5 August 2026 — Purposes and collected data made specific; overseas transfer disclosure added; processing of facial images and data of children under 14 added</li>
     <li>6 August 2026 — Processing of approximate location for advertising added; Datadog and Google AdMob tasks made specific; QR sharing items and anonymisation of some records clarified; basis for retention periods and automated decisions added; postal address and phone number removed from contact details (enquiries by email and the in-app contact form)</li>
     <li>21 August 2026 — Rewritten as a standalone notice for users outside the Republic of Korea rather than a translation of the Korean text. Added where fopic is available, how to opt out of ad tracking, a full transfer table, rights and response times, whether providing data is required, and complaint routes. Google LLC (Google AdMob) described as deciding its own use of ad data rather than acting on our instructions. Wording about paid subscriptions no longer assumes a particular launch date: it now states that the processing applies if you use a paid subscription. The data collected and the purposes are unchanged. Our contact address changed to a business email (contact@thetens.app), and our business address and phone number are shown again — they were removed on 6 August 2026 because they were a home address and a personal number, and are now those of our registered business premises.</li>
+    <li>18 August 2026 (effective 21 August 2026) — We introduced ad performance measurement (install attribution). AppsFlyer, which carries this out on our behalf, was added to the list of processors and to the overseas transfer table (sections 7 and 8). The measurement result is also passed to the platforms where we run ads (Meta, TikTok), so those platforms were added as third-party recipients and to the behavioural advertising section (sections 5, 6 and 7). Those platforms are not acting on our instructions — they also use the data to optimise their own ad delivery. The app does not contain their collection software (SDK), and if you do not allow app tracking on iOS the advertising identifier is not passed. Retention and storage location are stated on the basis of AppsFlyer's published documents.</li>
   </ul>
   <div class="biz">
     <strong>Business information</strong>
